@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SettingsController">
+   <children>
+      <Label alignment="CENTER" layoutY="76.0" prefHeight="88.0" prefWidth="545.0" text="Settings" textFill="#5e1212">
+         <font>
+            <Font name="Tahoma Bold" size="69.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e1212" height="272.0" layoutX="136.0" layoutY="272.0" opacity="0.41" stroke="BLACK" strokeType="INSIDE" width="273.0" />
+      <ToggleButton layoutX="158.0" layoutY="288.0" mnemonicParsing="false" onAction="#darkMode" prefHeight="73.0" prefWidth="230.0" text="Dark Mode" textFill="#5e1212">
+         <font>
+            <Font name="Segoe Print Bold" size="29.0" />
+         </font>
+      </ToggleButton>
+      <SplitMenuButton accessibleRole="IMAGE_VIEW" alignment="CENTER" layoutX="158.0" layoutY="456.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="230.0" text="Difficulty" textFill="#5e1212">
+        <items>
+          <MenuItem mnemonicParsing="false" text="5 Letters" />
+          <MenuItem mnemonicParsing="false" text="6 Letters" />
+        </items>
+         <font>
+            <Font name="Segoe Print Bold" size="29.0" />
+         </font>
+      </SplitMenuButton>
+      <Button layoutX="117.0" layoutY="631.0" mnemonicParsing="false" onAction="#returnHome" prefHeight="73.0" prefWidth="312.0" text="Return Home" textFill="#5e1212">
+         <font>
+            <Font name="Segoe Print Bold" size="29.0" />
+         </font>
+      </Button>
+      <ToggleButton layoutX="158.0" layoutY="371.0" mnemonicParsing="false" onAction="#lightMode" prefHeight="73.0" prefWidth="230.0" text="Light Mode" textFill="#5e1212">
+         <font>
+            <Font name="Segoe Print Bold" size="29.0" />
+         </font>
+      </ToggleButton>
+   </children>
+</AnchorPane>
